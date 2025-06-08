@@ -62,7 +62,7 @@ public class ChatGptApiDemo implements Constants {
                                                                                         // cosa c'è dopo e si
                                                                                         // ferma N secondi
                 if (retryAfter != null && !retryAfter.isEmpty()) {
-                    String rah = retryAfter.get(0);
+                    String rah = retryAfter.getFirst();
                     System.out.println("Try again in: " + rah);
                 }
 //                System.out.println("Response body: " + response.body());
